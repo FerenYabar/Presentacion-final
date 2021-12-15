@@ -1,0 +1,43 @@
+
+
+.content-qr{
+    text-align: center;
+    padding: 150px  ;
+    background-image: linear-gradient(to top left, #8E70C8,#0E071D);
+}
+
+.content-qr img{
+    width: 200px;
+}
+
+.image-qr{
+    display: inline-block;
+    padding: 50px;
+    background-color: white;
+}
+
+#imprimir{
+    text-align: center;
+    padding: 35px;
+    background-image: linear-gradient(to top left, #815DC9,#391680);
+}
+
+#imprimir h1{
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    color: #F82D97;
+    background-color: #3B3345;
+}
+
+
+@media only screen and (max-width: 600px){
+    .content-qr{
+        padding: 40px;
+    }
+
+    .image-qr{
+        padding: 10px;
+    }
+}
