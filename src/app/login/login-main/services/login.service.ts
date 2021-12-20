@@ -24,28 +24,22 @@ export class LoginService {
     await localStorage.setItem("localactivo","")
     await localStorage.setItem("adminactivo","")
     await this.validarusuario(usuario,contrasena)
-    
-  
+
+
     if (await this.validarusuario(usuario,contrasena) ){
-      
       return true
-    
-    } 
-    
+    }
     if (await this.validarlocal(usuario,contrasena)) {
       return true
-    
-    } 
+    }
     if(await usuario=='admin' && contrasena=='123') {
       localStorage.setItem("adminactivo","1")
       return true
     }
-    
     else{
       return false
     }
 
-    
 }
   async validarusuario(usuario:string,contrasena:string):Promise<Boolean>{
     let usuarioact:Number=0
@@ -66,15 +60,8 @@ export class LoginService {
       else{
       return true}
       }
-    
-  
 
-
-
-  
-
-
-  async ingresar(){   
+  async ingresar(){
     if(await this.Validacion(this.Usuario,this.Contrasena)){
       this.route.navigate(['categorias'])
     }

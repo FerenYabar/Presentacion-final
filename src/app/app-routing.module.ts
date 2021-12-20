@@ -43,7 +43,7 @@ const routes: Routes = [
         pathMatch: 'full'
     },
     {
-        path: 'descripcion-boleta',
+        path: 'descripcion-boleta/:idreserva',
         component: DescripcionBoletaMainComponent,
         pathMatch: 'full'
     },

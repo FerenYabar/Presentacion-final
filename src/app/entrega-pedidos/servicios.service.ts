@@ -38,7 +38,7 @@ export class ServiciosService {
    vista(codReserva:number){
      console.log("hola")
     localStorage.setItem("reservaactiva",codReserva.toString())
-    this.route.navigate(['descripcion-boleta'])
+    this.route.navigate(['descripcion-boleta/' + codReserva])
 
  }
 }
